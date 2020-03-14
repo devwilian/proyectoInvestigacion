@@ -1,41 +1,15 @@
-\documentclass[12pt,a4paper]{article}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{graphicx}
-\author{Jose C. Nina Cruz y Wilian D. Huanca Marca}
-\begin{document}
-% SECTION CARATULA
-\begin{figure}
-  \centering
-    \includegraphics[width=0.3\textwidth]{logo.png}
-\end{figure}
-\textbf{UNIVERSIDAD NACIONAL SAN ANTONIO ADAB DEL CUSCO}\\
+\documentclass[12pt,a4paper]{book}
 
-%TITULO
-\begin{center}
-\textbf{DISEÑO DE UN MODELO PARA LA GESTIÓN DE SERVICIOS DE TI PARA LA DIRECCIÓN DE SISTEMAS DE INFORMACIÓN DE LA UNSAAC SEGÚN COBIT E ITIL}
-\end{center}
-\begin{flushright}
-\textbf{PLAN DE TESIS}\\
-\vspace{15pt}
-Para optar al titulo profesional de:\\
-\textbf{INGENIERO INFORMATICO Y DE SISTEMAS}\\
-Presentan:\\
-\textbf{Br. JOSE CARLOS NINA CRUZ}\\
-\textbf{101212}\\
-\textbf{Br. WILIAN DARIO HUANCA MARCA}\\
-\textbf{121453}\\
-Bajo la asesoria de :\\
-\textbf{ING.  CANDIA}
-\end{flushright}
-\begin{center}
-\vspace{30pt}
-Peru, Marzo de 2020\\
-\vspace{30pt}
-Escuela Profesional de Ingenieria Informatica y de Sistemas\\
-\vspace{15pt}
-Facultad de Ingenieria Electrica, Electronica, Informatica y Mecanica
-\end{center}
+\input{_cod/package}
+
+\begin{document}
+\include{_cod/portada}
+
+\frontmatter
+\renewcommand{\contentsname}{INDICE}
+\tableofcontents
+\include{_cod/resumen}
+\mainmatter
+%\include{_cod/capitulo1}
+%\include{_cod/capitulo2}
 \end{document}
